@@ -8,7 +8,7 @@ int solve(){
         for(int i=0; i < n; i++){
             if(isalpha(s[i]) ){
                 sum+=1;
-                while(isalpha(s[i]) && i<n ){
+                while( (isalpha(s[i]) || s[i] == '-' ) && i<n ){
                     i+=1;
                 }
             }
@@ -21,5 +21,5 @@ int main(){
     cin.tie(NULL);
     int output = solve();
     cout << output ;
-    
+
 }
