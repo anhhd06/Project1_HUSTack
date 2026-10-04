@@ -8,7 +8,7 @@ void input(){
     for(int i=0;i<9;i++){
         for(int j=0;j<9;j++){
             cin >> a[i][j];
-            if(!a[i][j]){
+            if(a[i][j] != 0){
                 row[i].insert(a[i][j]);
                 col[j].insert(a[i][j]);
                 grid[ 3*(i/3)+(j/3) ].insert(a[i][j]);

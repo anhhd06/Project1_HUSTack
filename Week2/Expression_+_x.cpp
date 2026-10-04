@@ -20,7 +20,7 @@ void solve(){
         if(isdigit(a[i])){
             check2 = false;
             int j = i;
-            while (isdigit(a[j+1]) && j+1 < n)
+            while  ( j+1 < n && isdigit(a[j+1]) )
             {
                 j++;
             }
